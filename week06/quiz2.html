@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Prompt"
+      rel="stylesheet"
+    />
+    <style>
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      nav,
+      .nav,
+      .menu,
+      button,
+      .button,
+      .btn,
+      .price,
+      ._heading,
+      .wp-block-pullquote blockquote,
+      blockquote,
+      label,
+      legend,
+      a,
+      .card-header,
+      th,
+      li {
+        font-family: "Prompt", "Open Sans script=all rev=1" !important;
+        font-weight: 500 !important;
+      }     
+    </style>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="bg-light">
+    <nav class="navbar sticky-top navbar-expand-lg bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="http://cs.vru.ac.th/index.php">
+          <div style="display: flex; flex-direction: row">
+            <img
+              src="http://cs.vru.ac.th/images/css.png"
+              alt="Logo"
+              height="70"
+              class="d-inline-block align-text-center"
+            />
+            <div
+              class="d-lg-block"
+              style="line-height: 0.3; padding-top: 14px; padding-left: 10px"
+            >
+              <h1 style="margin-bottom: 0px; font-size: 22px" class="text-dark">
+                วิทยาการคอมพิวเตอร์
+              </h1>
+              <small class="" style="font-size: 10px; color: #777"
+                >มหาวิทยาลัยราชภัฏวไลยอลงกรณ์ ในพระบรมราชูปถัมภ์</small
+              >
+            </div>
+          </div>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header ms-4">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+              <img
+                src="http://cs.vru.ac.th/images/css.png"
+                alt="Logo"
+                height="70"
+                class="d-inline-block align-text-center"
+              />
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div
+            class="offcanvas-body"
+            style="
+              font-size: 18px;
+              line-height: 2.5;
+              padding-top: 0px;
+              padding-left: 50px;
+            "
+          >
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a
+                  class="nav-link text-dark"
+                  aria-current="page"
+                  href="index.html"
+                  >หน้าหลัก</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link text-dark dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  เกี่ยวกับหลักสูตร
+                </a>
+                <div class="dropdown-menu" aria-labelledby="aboutDropdown">
+                  <a
+                    class="dropdown-item"
+                    href="http://cs.vru.ac.th/history.php"
+                    >ประวัติหลักสูตร</a
+                  >
+                  <a
+                    class="dropdown-item"
+                    href="http://cs.vru.ac.th/structure.php"
+                    >โครงสร้างหลักสูตร</a
+                  >
+                  <a
+                    class="dropdown-item"
+                    href="http://cs.vru.ac.th/Description.php"
+                    >รายละเอียดหลักสูตร</a
+                  >
+                  <a
+                    class="dropdown-item"
+                    href="http://cs.vru.ac.th/Management.php"
+                    >โครงสร้างบริหารหลักสูตร</a
+                  >
+                  <a class="dropdown-item" href="http://cs.vru.ac.th/policy.php"
+                    >นโยบายด้านคุณภาพ</a
+                  >
+                  <a
+                    class="dropdown-item"
+                    href="http://cs.vru.ac.th/philosophy.php"
+                    >ปรัชญา วิสัยทัศน์ พันธกิจ</a
+                  >
+                  <a class="dropdown-item" href="http://cs.vru.ac.th/LAB.php"
+                    >ห้องปฏิบัติการคอมพิวเตอร์</a
+                  >
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link text-dark dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  อาจารย์และบุคคลากร
+                </a>
+                <div
+                  class="dropdown-menu dropright"
+                  aria-labelledby="teamDropdown"
+                >
+                  <a
+                    class="dropdown-item"
+                    href="http://cs.vru.ac.th/teacher.php"
+                    >อาจารย์ประจำหลักสูตร</a
+                  >
+                  <a
+                    class="dropdown-item"
+                    href="http://cs.vru.ac.th/support.php"
+                    >บุคลากรประจำหลักสูตร</a
+                  >
+                  <a
+                    class="dropdown-item"
+                    href="http://cs.vru.ac.th/publication.php"
+                    >ผลงานตีพิมพ์ของหลักสูตร</a
+                  >
+                  <a
+                    class="dropdown-item"
+                    href="http://cs.vru.ac.th/Training.php"
+                    >แจ้งการอบรมพัฒนาความรู้</a
+                  >
+                  <a class="dropdown-item" href="http://cs.vru.ac.th/staff.php"
+                    >ระเบียบแบบฟอร์มสำหรับอาจารย์และเจ้าหน้าที่</a
+                  >
+                  <a class="dropdown-item" href="http://cs.vru.ac.th/report.php"
+                    >รายงานการประกันคุณภาพการศึกษา</a
+                  >
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link text-dark dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  นักศึกษา
+                </a>
+                <div class="dropdown-menu" aria-labelledby="studentDropdown">
+                  <a class="dropdown-item" href="http://cs.vru.ac.th/tcas.php"
+                    >รับสมัครนักศึกษาใหม่</a
+                  >
+                  <a
+                    class="dropdown-item"
+                    href="http://cs.vru.ac.th/Student%20Guide.php"
+                    >คู่มือนักศึกษา</a
+                  >
+                  <a
+                    class="dropdown-item"
+                    href="http://cs.vru.ac.th/Project%20Guide.php"
+                    >คู่มือโครงงานนักศึกษา</a
+                  >
+                  <a
+                    class="dropdown-item"
+                    href="http://cs.vru.ac.th/Internship%20location.php"
+                    >สถานที่ฝึกสหกิจ</a
+                  >
+                  <a
+                    class="dropdown-item"
+                    href="http://cs.vru.ac.th/Internship%20documents.php"
+                    >เอกสารฝึกงาน</a
+                  >
+                  <a
+                    class="dropdown-item"
+                    href="http://cs.vru.ac.th/recommended.php"
+                    >แจ้งข้อเสนอแนะ/ร้องเรียน</a
+                  >
+                </div>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-dark"
+                  href="http://cs.vru.ac.th/content/"
+                  >อื่นๆ</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-dark"
+                  href="http://cs.vru.ac.th/contact.php"
+                  >ติดต่อเรา</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <!-- header -->
+      <div class="d-flex justify-content-center">
+        <img
+          src="https://scontent.fbkk25-1.fna.fbcdn.net/v/t39.30808-6/301572883_582301363685496_8289643292344889715_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=783fdb&_nc_ohc=_VuLmMpyLhAAX_64enV&_nc_ht=scontent.fbkk25-1.fna&oh=00_AfCnJjHqyS7TnHPPVzq01uYsfTDQkvXbLQmx3D3mRtx2lQ&oe=658C8339"
+          width="100%"
+          height="100%"
+        />
+      </div>
+      <!-- TCAS -->
+      <div class="row">
+        <div class="col-lg-7">
+          <div>
+            <img
+              class="img-thumbnail"
+              src="http://cs.vru.ac.th/images/tcas/pr-2020-05-14.jpg"
+              style="width: 100%"
+            />
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <h2>
+            รับสมัครนักศึกษา (ปริญญาตรีภาคจันทร์-ศุกร์ และภาคเสาร์-อาทิตย์)
+          </h2>
+          <p>
+            หลักสูตรวิทยาการคอมพิวเตอร์ คณะวิทยาศาสตร์และเทคโนโลยี
+            มหาวิทยาลัยราชภัฏวไลยอลงกรณ์ ในพระบรมราชูปถัมภ์ รับสมัครนักศึกษา
+            TCAS 66 (ปริญญาตรี จันทร์-ศุกร์ และภาคเสาร์-อาทิตย์)
+            ตั้งแต่วันนี้เป็นต้นไป ดูรายละเอียดและกรอกใบสมัครได้ที่นี่
+          </p>
+          <div class="text-center">
+            <a class="btn btn-primary" href="http://cs.vru.ac.th/tcas.php"
+              >สมัครเรียน</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- footer -->
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="text-center">
+            <div>
+              <h2>ติดต่อเรา</h2>
+              <img
+                class="img-thumbnail rounded-circle mb-4"
+                src="http://cs.vru.ac.th/images/css.png"
+                style="width: 70px; height: 70px"
+              />
+              <p>
+                หลักสูตรวิทยาการคอมพิวเตอร์ <br />
+                คณะวิทยาศาสตร์และเทคโนโลยี <br />
+                อาคาร 75 ปี วไลยอลงกรณ์ <br />
+                โทรศัพท์ 0-2529-0674-7 ต่อ 365 <br />
+                โทรสาร 02-909-3029
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <h2>Quick Links</h2>
+          <ul class="list-unstyled">
+            <li><a href="http://cs.vru.ac.th/teacher.php">อาจารย์</a></li>
+            <li><a href="http://cs.vru.ac.th/support.php">บุคคลากร</a></li>
+            <li><a href="#">งานวิจัยและพัฒนา</a></li>
+            <li><a href="http://cs.vru.ac.th/tcas.php">รับสมัครนักศึกษา</a></li>
+            <li><a href="http://cs.vru.ac.th/contact.php">ติดต่อเรา</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4">
+          <h2>Follow Us</h2>
+          <div
+            class="fb-page fb_iframe_widget"
+            data-href="https://www.facebook.com/cs.vru.ac.th"
+            data-width="290"
+            data-hide-cover="false"
+            data-show-facepile="false"
+            fb-xfbml-state="rendered"
+            fb-iframe-plugin-query="app_id=&amp;container_width=210&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2Fcs.vru.ac.th&amp;locale=en_US&amp;sdk=joey&amp;show_facepile=false&amp;width=290"
+          >
+            <span style="vertical-align: bottom; width: 210px; height: 130px">
+              <iframe
+                name="f268b2407f585f4"
+                width="290px"
+                height="1000px"
+                data-testid="fb:page Facebook Social Plugin"
+                title="fb:page Facebook Social Plugin"
+                frameborder="0"
+                allowtransparency="true"
+                allowfullscreen="true"
+                scrolling="no"
+                allow="encrypted-media"
+                src="https://web.facebook.com/v7.0/plugins/page.php?app_id=&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df1c87315300c994%26domain%3Dcs.vru.ac.th%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Fcs.vru.ac.th%252Ffcf18a056c4ad%26relation%3Dparent.parent&amp;container_width=210&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2Fcs.vru.ac.th&amp;locale=en_US&amp;sdk=joey&amp;show_facepile=false&amp;width=290"
+                style="
+                  border: none;
+                  visibility: visible;
+                  width: 210px;
+                  height: 130px;
+                "
+                class=""
+              >
+              </iframe>
+            </span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="text-center">
+              <hr />
+              <p>
+                Copyright © 2022 หลักสูตรวิทยาการคอมพิวเตอร์
+                คณะวิทยาศาสตร์และเทคโนโลยี <br />
+                มหาวิทยาลัยราชภัฏวไลยอลงกรณ์ ในพระบรมราชูปถัมภ์ เลขที่ 1 หมู่ 20
+                ต.คลองหนึ่ง อ.คลองหลวง จ.ปทุมธานี 13180
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

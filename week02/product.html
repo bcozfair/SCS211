@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      body {
+        background-image: url("https://img.freepik.com/free-vector/gradient-tech-futuristic-background_52683-74267.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+      }
+    </style>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap");
+      * {
+        font-family: "Permanent Marker", cursive !important;
+        font-weight: 1000;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="../week06/index.html">
+          <img
+            src="https://www.berliner-fussball.de/fileadmin/user_upload/soziales/Foto-Dateien/Logo_BFV_Fairplay_2023.png"
+            alt="Logo"
+            width="50"
+            height="50"
+            class="d-inline-block align-text-center"
+          />
+          Natchaphat</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../week06/index.html"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-house-door-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5"
+                  />
+                </svg>
+                Home</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle active"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-file-text-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2M5 4h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1m-.5 2.5A.5.5 0 0 1 5 6h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5M5 8h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1m0 2h3a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1"
+                  />
+                </svg>
+                Quizes
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="../week01/index.html"
+                    >week 01</a
+                  >
+                </li>
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item" href="#"
+                    >week 02<span class="float-end custom-toggle-arrow"
+                      >►</span
+                    ></a
+                  >
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="../week02/product.html">product</a></li>
+                    <li>
+                      <a class="dropdown-item" href="..//week02/register.html">register</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../week03/tcas.html"
+                    >week 03</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../week04/quiz.html"
+                    >week 04</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../week05/quiz.html"
+                    >week 05</a
+                  >
+                </li>
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item" href="#"
+                    >week 06<span class="float-end custom-toggle-arrow"
+                      >►</span
+                    ></a
+                  >
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="../week06/quiz.html">quiz</a></li>
+                    <li>
+                      <a class="dropdown-item" href="..//week06/quiz2.html">quiz 2</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../week06/contact.html">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-person-lines-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5 6s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zM11 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5m.5 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1zm2 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1zm0 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1z"
+                  />
+                </svg>
+                Contact</a
+              >
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="ค้นหา"
+              aria-label="Search"
+            />
+            <button class="btn btn-success" type="submit">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                fill="currentColor"
+                class="bi bi-search-heart"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M6.5 4.482c1.664-1.673 5.825 1.254 0 5.018-5.825-3.764-1.664-6.69 0-5.018"
+                />
+                <path
+                  d="M13 6.5a6.471 6.471 0 0 1-1.258 3.844c.04.03.078.062.115.098l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1.007 1.007 0 0 1-.1-.115h.002A6.5 6.5 0 1 1 13 6.5M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11"
+                />
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <div class="container bg-light">    
+      <h1>โน๊ตบุ๊ค Acer Predator Helios Neo 16 PHN16-71-58MD Black</h1>
+      <hr />
+      <h2>Acer Predator Helios Neo 16</h2>
+      <h3>ราคา ฿39,990</h3>
+
+      <div>
+        <img
+          src="https://media-cdn.bnn.in.th/295211/Predator-Helios-Neo-16-PHN16-71-01-square_medium.jpg"
+          alt="Acer Predator Helios Neo 16"
+          width="500"
+        />
+      </div>
+      <hr />
+
+      <ul>
+        <li>Intel Core i5-13500HX</li>
+        <li>16GB DDR5 SO-DIMM</li>
+        <li>512GB M.2 PCIe Gen 4 NVMe SSD</li>
+        <li>NVIDIA GeForce RTX 4050 (6GB GDDR6)</li>
+      </ul>
+      <hr />
+      <p>
+        แล็ปท็อปสำหรับเล่นเกมนี้มาพร้อมกับเทคโนโลยีระบายความร้อนที่เหนือชั้น<br />การแสดงผลที่รวดเร็ว
+        และคุณสมบัติเสริมประสิทธิภาพมากมาย<br />ช่วยให้คุณเปิดโปรแกรมพร้อมๆกันได้
+        รวมถึงการใช้โปรแกรมคำณวนต่างๆก็ทำได้อย่างดีเยี่ยม
+      </p>
+      <hr />
+      <input type="button" value="สั่งสินค้าเข้าตะกร้า" />
+      <hr />
+      <table>
+        <tr>
+          <th>พื้นที่</th>
+          <th>&nbsp; ราคาอัตราค่าจัดส่ง (บาท)</th>
+        </tr>
+        <tr>
+          <td>กรุงเทพฯ/ปริมณฑล</td>
+          <td>&nbsp; ฟรีค่าจัดส่ง</td>
+        </tr>
+        <tr>
+          <td>ภาคเหนือ</td>
+          <td>&nbsp; 120</td>
+        </tr>
+        <tr>
+          <td>ภาคอิสาน</td>
+          <td>&nbsp; 100</td>
+        </tr>
+        <tr>
+          <td>ภาคใต้</td>
+          <td>&nbsp; 150</td>
+        </tr>
+        <tr>
+          <td>อื่นๆ</td>
+          <td>&nbsp; 200</td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
+
+<style>
+  .dropdown:hover > .dropdown-menu {
+    display: block !important;
+  }
+
+  .dropdown-submenu:hover > .dropdown-menu {
+    display: block !important;
+    left: 100%;
+    margin-top: -37px;
+  }
+
+  .dropdown-item {
+    font-size: small;
+    /* 13px */
+  }
+
+  .dropdown-toggle::after {
+    font-size: var(--font-md);
+    margin-bottom: -2px;
+  }
+
+  .dropdown-menu li a.active {
+    color: #fff;
+  }
+
+  .custom-toggle-arrow {
+    font-size: 18px;
+    margin-top: 1px;
+    line-height: 12px;
+  }
+</style>
+

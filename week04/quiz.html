@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <style>
+      body {
+        background-image: url("https://img.freepik.com/premium-vector/white-bokeh-abstract-light-background_961004-124.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+      }
+    </style>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap");
+      * {
+        font-family: "Permanent Marker", cursive !important;
+        font-weight: 1000;
+      }
+    </style>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="../week06/index.html">
+          <img
+            src="https://www.berliner-fussball.de/fileadmin/user_upload/soziales/Foto-Dateien/Logo_BFV_Fairplay_2023.png"
+            alt="Logo"
+            width="50"
+            height="50"
+            class="d-inline-block align-text-center"
+          />
+          Natchaphat</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../week06/index.html"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-house-door-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5"
+                  />
+                </svg>
+                Home</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle active"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-file-text-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2M5 4h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1m-.5 2.5A.5.5 0 0 1 5 6h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5M5 8h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1m0 2h3a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1"
+                  />
+                </svg>
+                Quizes
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="../week01/index.html"
+                    >week 01</a
+                  >
+                </li>
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item" href="#"
+                    >week 02<span class="float-end custom-toggle-arrow"
+                      >►</span
+                    ></a
+                  >
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="../week02/product.html">product</a></li>
+                    <li>
+                      <a class="dropdown-item" href="..//week02/register.html">register</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../week03/tcas.html"
+                    >week 03</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../week04/quiz.html"
+                    >week 04</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../week05/quiz.html"
+                    >week 05</a
+                  >
+                </li>
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item" href="#"
+                    >week 06<span class="float-end custom-toggle-arrow"
+                      >►</span
+                    ></a
+                  >
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="../week06/quiz.html">quiz</a></li>
+                    <li>
+                      <a class="dropdown-item" href="..//week06/quiz2.html">quiz 2</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../week06/contact.html">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-person-lines-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5 6s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zM11 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5m.5 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1zm2 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1zm0 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1z"
+                  />
+                </svg>
+                Contact</a
+              >
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="ค้นหา"
+              aria-label="Search"
+            />
+            <button class="btn btn-success" type="submit">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                fill="currentColor"
+                class="bi bi-search-heart"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M6.5 4.482c1.664-1.673 5.825 1.254 0 5.018-5.825-3.764-1.664-6.69 0-5.018"
+                />
+                <path
+                  d="M13 6.5a6.471 6.471 0 0 1-1.258 3.844c.04.03.078.062.115.098l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1.007 1.007 0 0 1-.1-.115h.002A6.5 6.5 0 1 1 13 6.5M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11"
+                />
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <div class="container">      
+      <div
+        class="row mb-2"
+        style="background: rgba(142, 242, 225, 0.418); padding: 20px"
+        align="center"
+      >
+        <h1 align="center" class="font-home">
+          สมัครเรียนภาคพิเศษ (เสาร์-อาทิตย์)
+        </h1>
+      </div>
+
+      <div class="row mb-2">
+        <h2 align="center" class="font-home">กรุณากรอกข้อมูล</h2>
+      </div>
+
+      <form action="/action_page.php" class="was-validated">
+        <div class="row mb-3 col-lg-8">
+          <label>
+            คณะ / สาขาวิชาที่เลือกเข้าศึกษา<span style="color: red">
+              *</span
+            > </label
+          ><br />
+          <select class="form-select" required aria-label="select example">
+            <option value="">กรุณาเลือก...</option>
+            <option value="15311000001">
+              คณะครุศาสตร์ | สาขาวิชาการศึกษาปฐมวัย (ค.บ.)
+            </option>
+            <option value="15311000002">
+              คณะครุศาสตร์ | สาขาวิชาคณิตศาสตร์ (ค.บ.)
+            </option>
+            <option value="15311000005">
+              คณะครุศาสตร์ | สาขาวิชาภาษาอังกฤษ (ค.บ.)
+            </option>
+            <option value="15311000006">
+              คณะครุศาสตร์ | สาขาวิชาภาษาจีน (ค.บ.)
+            </option>
+            <option value="15311000007">
+              คณะครุศาสตร์ | สาขาวิชาภาษาไทย (ค.บ.)
+            </option>
+            <option value="15311000010">
+              คณะครุศาสตร์ | สาขาวิชาการประถมศึกษา (ค.บ.)
+            </option>
+            <option value="15311000011">
+              คณะครุศาสตร์ | สาขาวิชาภาษาอังกฤษ (หลักสูตรภาษาอังกฤษ) (ค.บ.)
+            </option>
+            <option value="15311000012">
+              คณะครุศาสตร์ | สาขาวิชาวิทยาศาสตร์ (ค.บ.)
+            </option>
+            <option value="15312000002">
+              คณะมนุษยศาสตร์และสังคมศาสตร์ | สาขาวิชาจิตวิทยา (ศศ.บ.)
+            </option>
+            <option value="15312000005">
+              คณะมนุษยศาสตร์และสังคมศาสตร์ | สาขาวิชานิติศาสตร์ (น.บ.)
+            </option>
+            <option value="15312000006">
+              คณะมนุษยศาสตร์และสังคมศาสตร์ | สาขาวิชาทัศนศิลป์ (ศป.บ.)
+            </option>
+            <option value="15312000007">
+              คณะมนุษยศาสตร์และสังคมศาสตร์ | สาขาวิชาภาษาไทย (ศศ.บ.)
+            </option>
+            <option value="15312000008">
+              คณะมนุษยศาสตร์และสังคมศาสตร์ | สาขาวิชาภาษาอังกฤษ (ศศ.บ.)
+            </option>
+            <option value="15312000009">
+              คณะมนุษยศาสตร์และสังคมศาสตร์ | สาขาวิชารัฐประศาสนศาสตร์ (รป.บ.)
+            </option>
+            <option value="15312000015">
+              คณะมนุษยศาสตร์และสังคมศาสตร์ | สาขาวิชารัฐศาสตร์ (ร.บ.)
+            </option>
+            <option value="15312000016">
+              คณะมนุษยศาสตร์และสังคมศาสตร์ | สาขาวิชาภาษาอังกฤษธุรกิจ(ศศ.บ.)
+            </option>
+            <option value="15312000017">
+              คณะมนุษยศาสตร์และสังคมศาสตร์ | สาขาวิชาสังคมศึกษา (ค.บ.)
+            </option>
+            <option value="15312000018">
+              คณะมนุษยศาสตร์และสังคมศาสตร์ | สาขาวิชาดนตรีศึกษา (ค.บ.)
+            </option>
+            <option value="15312000019">
+              คณะมนุษยศาสตร์และสังคมศาสตร์ | สาขาวิชานาฏศิลป์ศึกษา (ค.บ.)
+            </option>
+            <option value="15312000020">
+              คณะมนุษยศาสตร์และสังคมศาสตร์ |
+              สาขาวิชาบรรณารักษศาสตร์และสารสนเทศศาสตร์ (ค.บ.)
+            </option>
+            <option value="15313000001">
+              คณะวิทยาศาสตร์และเทคโนโลยี | สาขาวิชาคหกรรมศาสตร์ (วท.บ.)
+            </option>
+            <option value="15313000003">
+              คณะวิทยาศาสตร์และเทคโนโลยี | สาขาวิชาเทคโนโลยีสารสนเทศ
+              กลุ่มวิชาเทคโนโลยีดิจิทัล (วท.บ.)
+            </option>
+            <option value="15313000004">
+              คณะวิทยาศาสตร์และเทคโนโลยี | สาขาวิชาเทคโนโลยีสารสนเทศ
+              กลุ่มวิชาแอนิเมชันและดิจิทัลมีเดีย (วท.บ.)
+            </option>
+            <option value="15313000005">
+              คณะวิทยาศาสตร์และเทคโนโลยี | สาขาวิชาวิทยาการคอมพิวเตอร์ (วท.บ.)
+            </option>
+            <option value="15313000006">
+              คณะวิทยาศาสตร์และเทคโนโลยี | สาขาวิชาอาชีวอนามัยและความปลอดภัย
+              (วท.บ.)
+            </option>
+            <option value="15313000010">
+              คณะวิทยาศาสตร์และเทคโนโลยี | สาขาวิชาโภชนาการและการกำหนดอาหาร
+              (วท.บ.)
+            </option>
+            <option value="15313000016">
+              คณะวิทยาศาสตร์และเทคโนโลยี |
+              สาขาวิชานวัตกรรมดิจิทัลและวิศวกรรมซอฟต์แวร์ (วท.บ.)
+            </option>
+            <option value="15314000001">
+              คณะเทคโนโลยีการเกษตร | สาขาวิชาเกษตรศาสตร์
+              กลุ่มวิชาเทคโนโลยีการผลิตพืช (วท.บ.)
+            </option>
+            <option value="15314000002">
+              คณะเทคโนโลยีการเกษตร | สาขาวิชาเกษตรศาสตร์ กลุ่มวิชาสัตวศาสตร์
+              (วท.บ.)
+            </option>
+            <option value="15314000003">
+              คณะเทคโนโลยีการเกษตร | สาขาวิชาวิทยาศาสตร์และเทคโนโลยีการอาหาร
+              (วท.บ.)
+            </option>
+            <option value="15314000004">
+              คณะเทคโนโลยีการเกษตร | สาขาวิชาเทคโนโลยีภูมิทัศน์ (วท.บ.)
+            </option>
+            <option value="15314100001">
+              คณะเทคโนโลยีการเกษตร | สาขาวิชาเกษตรศาสตร์
+              กลุ่มวิชาเทคโนโลยีการผลิตพืช (วท.บ.) (ปวส.)
+            </option>
+            <option value="15314100002">
+              คณะเทคโนโลยีการเกษตร | สาขาวิชาเกษตรศาสตร์ กลุ่มวิชาสัตวศาสตร์
+              (วท.บ.) (ปวส.)
+            </option>
+            <option value="15314100003">
+              คณะเทคโนโลยีการเกษตร | สาขาวิชาวิทยาศาสตร์และเทคโนโลยีการอาหาร
+              (วท.บ.) (ปวส.)
+            </option>
+            <option value="15314100004">
+              คณะเทคโนโลยีการเกษตร | สาขาวิชาเทคโนโลยีภูมิทัศน์ (วท.บ.) (ปวส.)
+            </option>
+            <option value="15315000001">
+              คณะเทคโนโลยีอุตสาหกรรม |
+              สาขาวิชาเทคโนโลยีไฟฟ้าอุตสาหกรรม(ต่อเนื่อง) (อส.บ.)
+            </option>
+            <option value="15315000002">
+              คณะเทคโนโลยีอุตสาหกรรม | สาขาวิชาวิศวกรรมการจัดการ (วศ.บ.)
+            </option>
+            <option value="15315000004">
+              คณะเทคโนโลยีอุตสาหกรรม | สาขาวิชาเทคโนโลยีวิศวกรรมเครื่องกล
+              (วศ.บ.)
+            </option>
+            <option value="15315000005">
+              คณะเทคโนโลยีอุตสาหกรรม | สาขาวิชาเทคโนโลยีวิศวกรรมโยธา (วศ.บ.)
+            </option>
+            <option value="15315000006">
+              คณะเทคโนโลยีอุตสาหกรรม | สาขาวิชาวิศวกรรมเมคคาทรอนิกส์และหุ่นยนต์
+              (วศ.บ.)
+            </option>
+            <option value="15315000007">
+              คณะเทคโนโลยีอุตสาหกรรม | สาขาวิชาออกแบบอุตสาหกรรม (อส.บ.)
+            </option>
+            <option value="15316000001">
+              คณะวิทยาการจัดการ | สาขาวิชาการจัดการท่องเที่ยว (ศศ.บ.)
+            </option>
+            <option value="15316000002">
+              คณะวิทยาการจัดการ | สาขาวิชาการจัดการทั่วไป (บธ.บ)
+            </option>
+            <option value="15316000003">
+              คณะวิทยาการจัดการ | สาขาวิชาธุรกิจค้าปลีกสมัยใหม่ (บธ.บ)
+            </option>
+            <option value="15316000004">
+              คณะวิทยาการจัดการ | สาขาวิชาการจัดการโลจิสติกส์และซัพพลายเชน
+              (บธ.บ)
+            </option>
+            <option value="15316000006">
+              คณะวิทยาการจัดการ | สาขาวิชาการบริหารธุรกิจ กลุ่มวิชาการตลาด
+              (บธ.บ)
+            </option>
+            <option value="15316000007">
+              คณะวิทยาการจัดการ | สาขาวิชาการบริหารธุรกิจ
+              กลุ่มวิชาการบริหารทรัพยากรมนุษย์ (บธ.บ)
+            </option>
+            <option value="15316000008">
+              คณะวิทยาการจัดการ | สาขาวิชาการบัญชี (บช.บ.)
+            </option>
+            <option value="15316000009">
+              คณะวิทยาการจัดการ | สาขาวิชาธุรกิจดิจิทัล (บธ.บ)
+            </option>
+            <option value="15316000010">
+              คณะวิทยาการจัดการ | สาขาวิชาการสื่อสารดิจิทัลและมัลติมีเดีย
+              (นศ.บ.)
+            </option>
+            <option value="15316000011">
+              คณะวิทยาการจัดการ | สาขาวิชาการจัดการธุรกิจสมัยใหม่ (ต่อเนื่อง)
+              (บธ.บ.)
+            </option>
+            <option value="15317000001">
+              วิทยาลัยนวัตกรรมการจัดการ | สาขาวิชานวัตกรรมการจัดการธุรกิจการบิน
+              (หลักสูตรนานาชาติ) (บธ.บ)
+            </option>
+            <option value="15317000002">
+              วิทยาลัยนวัตกรรมการจัดการ | สาขาวิชาการจัดการการบริการและการโรงแรม
+              (ศศ.บ.)
+            </option>
+            <option value="15317000004">
+              วิทยาลัยนวัตกรรมการจัดการ | สาขาวิชาการจัดการนวัตกรรมการค้า (บธ.บ)
+            </option>
+            <option value="15318000001">
+              คณะสาธารณสุขศาสตร์ | สาขาวิชาสาธารณสุขศาสตร์ (ส.บ.)
+            </option>
+            <option value="15318000003">
+              คณะสาธารณสุขศาสตร์ | สาขาวิชาการจัดการสถานพยาบาล (ส.บ.)
+            </option>
+            <option value="15318000004">
+              คณะสาธารณสุขศาสตร์ | สาขาวิชาอนามัยสิ่งแวดล้อม (วท.บ.)
+            </option>
+            <option value="15318000006">
+              คณะสาธารณสุขศาสตร์ | สาขาวิชาเทคโนโลยีสุขภาพและความงาม (วท.บ.)
+            </option>
+            <option value="15341000001">
+              สาขาวิชาเกษตรศาสตร์ กลุ่มวิชาเทคโนโลยีการผลิตพืช
+              (วท.บ.)(เรียนที่สระแก้ว)
+            </option>
+            <option value="15341000002">
+              สาขาวิชาเกษตรศาสตร์ กลุ่มวิชาสัตวศาสตร์ (วท.บ.)(เรียนที่สระแก้ว)
+            </option>
+            <option value="15341000003">
+              สาขาวิชารัฐประศาสนศาสตร์ (รป.บ.)(เรียนที่สระแก้ว)
+            </option>
+            <option value="15341000004">
+              สาขาวิชาการจัดการทั่วไป (บธ.บ.)(เรียนที่สระแก้ว)
+            </option>
+          </select>
+          <div class="invalid-feedback">กรุณากรอกข้อมูลให้ครบถ้วน</div>
+        </div>
+
+        <div class="row mb-3">
+          <div class="col-lg-3">
+            <label>คำนำหน้าชื่อ<span style="color: red"> *</span> </label><br />
+            <select class="form-select" required aria-label="select example">
+              <option value="">กรุณาเลือก...</option>
+              <option value="1">นาย</option>
+              <option value="2">นาง</option>
+              <option value="2">นางสาว</option>
+            </select>
+            <div class="invalid-feedback">กรุณากรอกข้อมูลให้ครบถ้วน</div>
+          </div>
+          <div class="col-lg-3">
+            <label>ชื่อ</label><span style="color: red"> *</span>
+            <input
+              type="text"
+              class="form-control is-valid"
+              id="validationServer01"
+              value=""
+              placeholder="กรุณากรอกชื่อ"
+              required
+            />
+            <div class="invalid-feedback">กรุณากรอกข้อมูลให้ครบถ้วน</div>
+          </div>
+          <div class="col-lg-3">
+            <label>นามสกุล</label><span style="color: red"> *</span>
+            <input
+              type="text"
+              class="form-control is-valid"
+              id="validationServer01"
+              value=""
+              placeholder="กรุณากรอกนามสกุล"
+              required
+            />
+            <div class="invalid-feedback">กรุณากรอกข้อมูลให้ครบถ้วน</div>
+          </div>
+          <div class="col-lg-3">
+            <label>หมายเลขบัตรประชาชน</label><span style="color: red"> *</span>
+            <input
+              type="number"
+              class="form-control is-valid"
+              id="validationServer01"
+              value=""
+              placeholder="ตัวเลขเท่านั้น"
+              required
+            />
+            <div class="invalid-feedback">กรุณากรอกข้อมูลให้ครบถ้วน</div>
+          </div>
+        </div>
+
+        <div class="row mb-3">
+          <div class="col-lg-3">
+            <label>สัญชาติ<span style="color: red"> *</span> </label><br />
+            <select class="form-select" required aria-label="select example">
+              <option value="">กรุณาเลือก...</option>
+              <option value="1">ไทย</option>
+              <option value="2">ต่างชาติ</option>
+            </select>
+            <div class="invalid-feedback">กรุณากรอกข้อมูลให้ครบถ้วน</div>
+          </div>
+          <div class="col-lg-3">
+            <label>เพศ<span style="color: red"> *</span> </label><br />
+            <select class="form-select" required aria-label="select example">
+              <option value="">กรุณาเลือก...</option>
+              <option value="1">ชาย</option>
+              <option value="2">หญิง</option>
+            </select>
+            <div class="invalid-feedback">กรุณากรอกข้อมูลให้ครบถ้วน</div>
+          </div>
+          <div class="col-lg-3">
+            <label>อายุ</label><span style="color: red"> *</span>
+            <input
+              type="number"
+              class="form-control is-valid"
+              id="validationServer01"
+              value=""
+              placeholder="ตัวเลขเท่านั้น"
+              required
+            />
+            <div class="invalid-feedback">กรุณากรอกข้อมูลให้ครบถ้วน</div>
+          </div>
+          <div class="col-lg-3">
+            <label>วันเกิด</label
+            ><span style="color: red"> (วัน/เดือน/ปี ค.ศ.)</span>
+            <input
+              type="date"
+              class="form-control is-valid"
+              id="validationServer01"
+              value=""
+              placeholder="ตัวเลขเท่านั้น"
+              required
+            />
+            <div class="invalid-feedback">กรุณากรอกข้อมูลให้ครบถ้วน</div>
+          </div>
+        </div>
+
+        <div class="row mb-3">
+          <div class="col-lg-3">
+            <label>เบอร์โทรศัพท์</label><span style="color: red"> *</span>
+            <input
+              type="number"
+              class="form-control is-valid"
+              id="validationServer01"
+              value=""
+              placeholder="ตัวเลขเท่านั้น"
+              required
+            />
+            <div class="invalid-feedback">กรุณากรอกข้อมูลให้ครบถ้วน</div>
+          </div>
+          <div class="col-lg-3">
+            <label>E-mail (อีเมล)</label><span style="color: red"> *</span>
+            <input
+              type="text"
+              class="form-control is-valid"
+              id="validationServer01"
+              value=""
+              placeholder="ตัวอย่าง : name@example.com"
+              required
+            />
+            <div class="invalid-feedback">กรุณากรอกข้อมูลให้ครบถ้วน</div>
+          </div>
+          <div class="col-lg-3">
+            <label>ID Line</label><span style="color: red"> (ไม่บังคับ)</span>
+            <input
+              type="text"
+              class="form-control"
+              id="validationServer01"
+              value=""
+            />
+          </div>
+          <div class="col-lg-3">
+            <label>Facebook</label><span style="color: red"> (ไม่บังคับ)</span>
+            <input
+              type="text"
+              class="form-control"
+              id="validationServer01"
+              value=""
+            />
+          </div>
+        </div>
+
+        <div class="row mb-3">
+          <div class="col-lg-3">
+            <label
+              >วุฒิที่ใช้ในการสมัคร<span style="color: red"> *</span> </label
+            ><br />
+            <select class="form-select" required aria-label="select example">
+              <option value="">กรุณาเลือก...</option>
+              <option value="1">ม.6/high school</option>
+              <option value="2">ปวช./Vocational Certificate</option>
+              <option value="3">ปวส./High Vocational Certificate</option>
+              <option value="4">อนุปริญญา/Diploma</option>
+              <option value="5">ปริญญาตรี/Bachelor degree</option>
+            </select>
+            <div class="invalid-feedback">กรุณากรอกข้อมูลให้ครบถ้วน</div>
+          </div>
+          <div class="col-lg-5">
+            <label>ชื่อสถานศึกษา</label><span style="color: red"> *</span>
+            <input
+              type="text"
+              class="form-control is-valid"
+              id="validationServer01"
+              value=""
+              placeholder="ตามวุฒิที่ใช้ในการสมัคร"
+              required
+            />
+            <div class="invalid-feedback">กรุณากรอกข้อมูลให้ครบถ้วน</div>
+          </div>
+          <div class="col-lg-3">
+            <label>จังหวัด</label><span style="color: red"> *</span>
+            <select class="form-select" required aria-label="select example">
+              <option value="">กรุณาเลือก...</option>
+              <option value="99">ต่างชาติ / foreigner</option>
+              <option value="64">กระบี่ / Krabi</option>
+              <option value="1">กรุงเทพมหานคร / Bangkok</option>
+              <option value="56">กาญจนบุรี / Kanchanaburi</option>
+              <option value="34">กาฬสินธุ์ / Kalasin</option>
+              <option value="49">กำแพงเพชร / Kamphaeng Phet</option>
+              <option value="28">ขอนแก่น / Khon Kaen</option>
+              <option value="13">จันทบุรี / Chanthaburi</option>
+              <option value="15">ฉะเชิงเทรา / Chachoengsao</option>
+              <option value="11">ชลบุรี / Chon Buri</option>
+              <option value="9">ชัยนาท / Chai Nat</option>
+              <option value="25">ชัยภูมิ / Chaiyaphum</option>
+              <option value="69">ชุมพร / Chumphon</option>
+              <option value="45">เชียงราย / Chiang Rai</option>
+              <option value="38">เชียงใหม่ / Chiang Mai</option>
+              <option value="72">ตรัง / Trang</option>
+              <option value="14">ตราด / Trat</option>
+              <option value="50">ตาก / Tak</option>
+              <option value="17">นครนายก / Nakhon Nayok</option>
+              <option value="58">นครปฐม / Nakhon Pathom</option>
+              <option value="36">นครพนม / Nakhon Phanom</option>
+              <option value="19">นครราชสีมา / Nakhon Ratchasima</option>
+              <option value="63">นครศรีธรรมราช / Nakhon Si Thammarat</option>
+              <option value="47">นครสวรรค์ / Nakhon Sawan</option>
+              <option value="3">นนทบุรี / Nonthaburi</option>
+              <option value="76">นราธิวาส / Narathiwat</option>
+              <option value="43">น่าน / Nan</option>
+              <option value="77">บึงกาฬ / buogkan</option>
+              <option value="20">บุรีรัมย์ / Buri Ram</option>
+              <option value="4">ปทุมธานี / Pathum Thani</option>
+              <option value="62">ประจวบคีรีขันธ์ / Prachuap Khiri Khan</option>
+              <option value="16">ปราจีนบุรี / Prachin Buri</option>
+              <option value="74">ปัตตานี / Pattani</option>
+              <option value="5">
+                พระนครศรีอยุธยา / Phra Nakhon Si Ayutthaya
+              </option>
+              <option value="44">พะเยา / Phayao</option>
+              <option value="65">พังงา / Phangnga</option>
+              <option value="73">พัทลุง / Phatthalung</option>
+              <option value="53">พิจิตร / Phichit</option>
+              <option value="52">พิษณุโลก / Phitsanulok</option>
+              <option value="61">เพชรบุรี / Phetchaburi</option>
+              <option value="54">เพชรบูรณ์ / Phetchabun</option>
+              <option value="42">แพร่ / Phrae</option>
+              <option value="66">ภูเก็ต / Phuket</option>
+              <option value="32">มหาสารคาม / Maha Sarakham</option>
+              <option value="37">มุกดาหาร / Mukdahan</option>
+              <option value="46">แม่ฮ่องสอน / Mae Hong Son</option>
+              <option value="0">ไม่ระบุ / ไม่ระบุ</option>
+              <option value="24">ยโสธร / Yasothon</option>
+              <option value="75">ยะลา / Yala</option>
+              <option value="33">ร้อยเอ็ด / Roi Et</option>
+              <option value="68">ระนอง / Ranong</option>
+              <option value="12">ระยอง / Rayong</option>
+              <option value="55">ราชบุรี / Ratchaburi</option>
+              <option value="7">ลพบุรี / Loburi</option>
+              <option value="40">ลำปาง / Lampang</option>
+              <option value="39">ลำพูน / Lamphun</option>
+              <option value="30">เลย / Loei</option>
+              <option value="22">ศรีสะเกษ / Si Sa Ket</option>
+              <option value="35">สกลนคร / Sakon Nakhon</option>
+              <option value="70">สงขลา / Songkhla</option>
+              <option value="71">สตูล / Satun</option>
+              <option value="2">สมุทรปราการ / Samut Prakan</option>
+              <option value="60">สมุทรสงคราม / Samut Songkhram</option>
+              <option value="59">สมุทรสาคร / Samut Sakhon</option>
+              <option value="18">สระแก้ว / Sa Kaeo</option>
+              <option value="10">สระบุรี / Saraburi</option>
+              <option value="8">สิงห์บุรี / Sing Buri</option>
+              <option value="51">สุโขทัย / Sukhothai</option>
+              <option value="57">สุพรรณบุรี / Suphan Buri</option>
+              <option value="67">สุราษฎร์ธานี / Surat Thani</option>
+              <option value="21">สุรินทร์ / Surin</option>
+              <option value="31">หนองคาย / Nong Khai</option>
+              <option value="27">หนองบัวลำภู / Nong Bua Lam Phu</option>
+              <option value="6">อ่างทอง / Ang Thong</option>
+              <option value="26">อำนาจเจริญ / Amnat Charoen</option>
+              <option value="29">อุดรธานี / Udon Thani</option>
+              <option value="41">อุตรดิตถ์ / Uttaradit</option>
+              <option value="48">อุทัยธานี / Uthai Thani</option>
+              <option value="23">อุบลราชธานี / Ubon Ratchathani</option>
+            </select>
+            <div class="invalid-feedback">กรุณากรอกข้อมูลให้ครบถ้วน</div>
+          </div>
+        </div>
+
+        <div class="row mb-3">
+          <div class="col-lg-3">
+            <label>สาขา / สายวิชาที่เรียน</label
+            ><span style="color: red"> *</span>
+            <input
+              type="text"
+              class="form-control is-valid"
+              id="validationServer01"
+              value=""
+              placeholder="ตามวุฒิที่ใช้ในการสมัคร"
+              required
+            />
+            <div class="invalid-feedback">กรุณากรอกข้อมูลให้ครบถ้วน</div>
+          </div>
+          <div class="col-lg-3">
+            <label>คะแนนเฉลี่ย (GPAX)</label><span style="color: red"> *</span>
+            <input
+              type="number"
+              required
+              min="0.01"
+              step="0.01"
+              class="form-control is-valid"
+              id="validationServer01"
+              value=""
+              placeholder="ตามวุฒิที่ใช้ในการสมัคร"
+              required
+            />
+            <div class="invalid-feedback">กรุณากรอกข้อมูลให้ครบถ้วน</div>
+          </div>
+          <div class="col-lg-3">
+            <label
+              >ต้องการกู้ กยศ. / กรอ<span style="color: red"> *</span> </label
+            ><br />
+            <select class="form-select" required aria-label="select example">
+              <option value="">กรุณาเลือก...</option>
+              <option value="1">ต้องการ</option>
+              <option value="2">ไม่ต้องการ</option>
+            </select>
+            <div class="invalid-feedback">กรุณากรอกข้อมูลให้ครบถ้วน</div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="mb-4">
+              <label>เอกสารแนบ</label
+              ><span style="color: red"> (ผลการเรียน เฉพาะนามสกุล.pdf)</span>
+              <input
+                type="file"
+                class="form-control"
+                aria-label="file example"
+                required
+              />
+              <div class="invalid-feedback">กรุณากรอกข้อมูลให้ครบถ้วน</div>
+            </div>
+
+            <div class="row mb-4">
+              <label
+                >เงื่อนไขและข้อตกลงในการสมัคร<span style="color: red">
+                  (กรุณาอ่าน)</span
+                ></label
+              >
+              <span style="color: red"
+                >*
+                ผู้มีสิทธิ์เข้าศึกษาชำระเงินลงทะเบียนตามวันที่มหาวิทยาลัยกำหนด
+                หากไม่ชำระเงินถือว่าสละสิทธิ์
+                และมหาวิทยาลัยจะไม่คืนเงินที่ชำระไว้ทุกกรณี<br />*
+                หากตรวจสอบพบว่า มีการปลอมแปลงวุฒิการศึกษา
+                หรือเอกสารหลักฐานในการสมัครมหาวิทยาลัยจะถอนสภาพการเป็นนักศึกษาและดำเนินคดีตามกฎหมาย
+              </span>
+            </div>
+
+            <div class="row mb-2">
+              <div class="d-flex justify-content-center">
+                <div class="form-check">
+                  <input
+                    type="checkbox"
+                    class="form-check-input"
+                    id="validationFormCheck1"
+                    required
+                  />
+                  <label class="form-check-label" for="validationFormCheck1"
+                    >ฉันยอมรับเงื่อนไขและข้อตกลง</label
+                  >
+                  <div class="invalid-feedback"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row mb-5">
+              <div class="d-flex justify-content-center">
+                <input
+                  type="submit"
+                  class="btn btn-success"
+                  value="ยืนยัน"
+                />&ensp;
+                <input type="reset" class="btn btn-danger" value="ยกเลิก" />
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-5 ms-5">
+            <label>ทราบข่าวการรับสมัครจาก</label
+            ><span style="color: red"> (กรุณาเลือก 1 รายการ)</span>
+            <div class="form-check">
+              <input
+                type="radio"
+                class="form-check-input"
+                id="validationFormCheck2"
+                name="radio-stacked"
+                required
+              />
+              <label class="form-check-label" for="validationFormCheck2"
+                >เว็บไซต์ (Website)</label
+              >
+            </div>
+            <div class="form-check">
+              <input
+                type="radio"
+                class="form-check-input"
+                id="validationFormCheck2"
+                name="radio-stacked"
+                required
+              />
+              <label class="form-check-label" for="validationFormCheck2"
+                >ป้ายโฆษณา (Billboard)</label
+              >
+            </div>
+            <div class="form-check">
+              <input
+                type="radio"
+                class="form-check-input"
+                id="validationFormCheck2"
+                name="radio-stacked"
+                required
+              />
+              <label class="form-check-label" for="validationFormCheck2"
+                >เพื่อน (Friends)</label
+              >
+            </div>
+            <div class="form-check">
+              <input
+                type="radio"
+                class="form-check-input"
+                id="validationFormCheck2"
+                name="radio-stacked"
+                required
+              />
+              <label class="form-check-label" for="validationFormCheck2"
+                >ผู้ปกครอง (Parents)</label
+              >
+            </div>
+            <div class="form-check">
+              <input
+                type="radio"
+                class="form-check-input"
+                id="validationFormCheck2"
+                name="radio-stacked"
+                required
+              />
+              <label class="form-check-label" for="validationFormCheck2"
+                >ครูแนะแนว (Guidance teacher)</label
+              >
+            </div>
+            <div class="form-check mb-3">
+              <input
+                type="radio"
+                class="form-check-input"
+                id="validationFormCheck3"
+                name="radio-stacked"
+                required
+              />
+              <label class="form-check-label" for="validationFormCheck3"
+                >อื่น ๆ (Other)</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="validationTextarea"
+                placeholder="อื่น ๆ โปรดระบุ (Other please specify)"
+              />
+              <div class="invalid-feedback">กรุณากรอกข้อมูลให้ครบถ้วน</div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
+
+<style>
+  .dropdown:hover > .dropdown-menu {
+    display: block !important;
+  }
+
+  .dropdown-submenu:hover > .dropdown-menu {
+    display: block !important;
+    left: 100%;
+    margin-top: -37px;
+  }
+
+  .dropdown-item {
+    font-size: small;
+    /* 13px */
+  }
+
+  .dropdown-toggle::after {
+    font-size: var(--font-md);
+    margin-bottom: -2px;
+  }
+
+  .dropdown-menu li a.active {
+    color: #fff;
+  }
+
+  .custom-toggle-arrow {
+    font-size: 18px;
+    margin-top: 1px;
+    line-height: 12px;
+  }
+</style>
+

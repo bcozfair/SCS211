@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap");
+      * {
+        font-family: "Permanent Marker", cursive !important;
+        font-weight: 1000;
+      }
+    </style>
+    
+  </head>
+
+  <body>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="../week06/index.html">
+          <img
+            src="https://www.berliner-fussball.de/fileadmin/user_upload/soziales/Foto-Dateien/Logo_BFV_Fairplay_2023.png"
+            alt="Logo"
+            width="50"
+            height="50"
+            class="d-inline-block align-text-center"
+          />
+          Natchaphat</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../week06/index.html"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-house-door-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5"
+                  />
+                </svg>
+                Home</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle active"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-file-text-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2M5 4h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1m-.5 2.5A.5.5 0 0 1 5 6h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5M5 8h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1m0 2h3a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1"
+                  />
+                </svg>
+                Quizes
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="../week01/index.html"
+                    >week 01</a
+                  >
+                </li>
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item" href="#"
+                    >week 02<span class="float-end custom-toggle-arrow"
+                      >►</span
+                    ></a
+                  >
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="../week02/product.html">product</a></li>
+                    <li>
+                      <a class="dropdown-item" href="..//week02/register.html">register</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../week03/tcas.html"
+                    >week 03</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../week04/quiz.html"
+                    >week 04</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../week05/quiz.html"
+                    >week 05</a
+                  >
+                </li>
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item" href="#"
+                    >week 06<span class="float-end custom-toggle-arrow"
+                      >►</span
+                    ></a
+                  >
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="../week06/quiz.html">quiz</a></li>
+                    <li>
+                      <a class="dropdown-item" href="..//week06/quiz2.html">quiz 2</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../week06/contact.html">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-person-lines-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5 6s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zM11 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5m.5 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1zm2 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1zm0 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1z"
+                  />
+                </svg>
+                Contact</a
+              >
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="ค้นหา"
+              aria-label="Search"
+            />
+            <button class="btn btn-success" type="submit">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                fill="currentColor"
+                class="bi bi-search-heart"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M6.5 4.482c1.664-1.673 5.825 1.254 0 5.018-5.825-3.764-1.664-6.69 0-5.018"
+                />
+                <path
+                  d="M13 6.5a6.471 6.471 0 0 1-1.258 3.844c.04.03.078.062.115.098l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1.007 1.007 0 0 1-.1-.115h.002A6.5 6.5 0 1 1 13 6.5M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11"
+                />
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <!-- header -->
+      <div class="row">
+        <div class="col-lg-6">
+          <div>
+            <img
+              class=""
+              src="http://cs.vru.ac.th/images/css.png"
+              height="50"
+            />
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <a class="px-4" href="http://cs.vru.ac.th/index.php">หน้าหลัก</a>
+          <a class="px-4" href="http://cs.vru.ac.th/about.php">
+            เกี่ยวกับหลักสูตร
+          </a>
+          <a class="px-4" href="http://cs.vru.ac.th/teacher.php"> อาจารย์ </a>
+          <a class="px-4" href="http://cs.vru.ac.th/student.php"> นักศึกษา </a>
+          <a class="px-4" href="http://cs.vru.ac.th/other.php"> อื่นๆ </a>
+        </div>
+      </div>
+      <!-- TCAS -->
+      <div class="row">
+        <div class="col-lg-7">
+          <div>
+            <img
+              class="img-thumbnail"
+              src="http://cs.vru.ac.th/images/tcas/pr-2020-05-14.jpg"
+              style="width: 100%"
+            />
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <h2>
+            รับสมัครนักศึกษา (ปริญญาตรีภาคจันทร์-ศุกร์ และภาคเสาร์-อาทิตย์)
+          </h2>
+          <p>
+            หลักสูตรวิทยาการคอมพิวเตอร์ คณะวิทยาศาสตร์และเทคโนโลยี
+            มหาวิทยาลัยราชภัฏวไลยอลงกรณ์ ในพระบรมราชูปถัมภ์ รับสมัครนักศึกษา
+            TCAS 66 (ปริญญาตรี จันทร์-ศุกร์ และภาคเสาร์-อาทิตย์)
+            ตั้งแต่วันนี้เป็นต้นไป ดูรายละเอียดและกรอกใบสมัครได้ที่นี่
+          </p>
+          <div class="text-center">
+            <a class="btn btn-primary" href="http://cs.vru.ac.th/tcas.php"
+              >สมัครเรียน</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- footer -->
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="text-center">
+            <div>
+              <h2>ติดต่อเรา</h2>
+              <img
+                class="img-thumbnail rounded-circle mb-4"
+                src="http://cs.vru.ac.th/images/css.png"
+                style="width: 70px; height: 70px"
+              />
+              <p>
+                หลักสูตรวิทยาการคอมพิวเตอร์ <br />
+                คณะวิทยาศาสตร์และเทคโนโลยี <br />
+                อาคาร 75 ปี วไลยอลงกรณ์ <br />
+                โทรศัพท์ 0-2529-0674-7 ต่อ 365 <br />
+                โทรสาร 02-909-3029
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <h2>Quick Links</h2>
+          <ul class="list-unstyled">
+            <li><a href="http://cs.vru.ac.th/teacher.php">อาจารย์</a></li>
+            <li><a href="http://cs.vru.ac.th/support.php">บุคคลากร</a></li>
+            <li><a href="#">งานวิจัยและพัฒนา</a></li>
+            <li><a href="http://cs.vru.ac.th/tcas.php">รับสมัครนักศึกษา</a></li>
+            <li><a href="http://cs.vru.ac.th/contact.php">ติดต่อเรา</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4">
+          <h2>Follow Us</h2>
+          <div
+            class="fb-page fb_iframe_widget"
+            data-href="https://www.facebook.com/cs.vru.ac.th"
+            data-width="290"
+            data-hide-cover="false"
+            data-show-facepile="false"
+            fb-xfbml-state="rendered"
+            fb-iframe-plugin-query="app_id=&amp;container_width=210&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2Fcs.vru.ac.th&amp;locale=en_US&amp;sdk=joey&amp;show_facepile=false&amp;width=290"
+          >
+            <span style="vertical-align: bottom; width: 210px; height: 130px">
+              <iframe
+                name="f268b2407f585f4"
+                width="290px"
+                height="1000px"
+                data-testid="fb:page Facebook Social Plugin"
+                title="fb:page Facebook Social Plugin"
+                frameborder="0"
+                allowtransparency="true"
+                allowfullscreen="true"
+                scrolling="no"
+                allow="encrypted-media"
+                src="https://web.facebook.com/v7.0/plugins/page.php?app_id=&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df1c87315300c994%26domain%3Dcs.vru.ac.th%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Fcs.vru.ac.th%252Ffcf18a056c4ad%26relation%3Dparent.parent&amp;container_width=210&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2Fcs.vru.ac.th&amp;locale=en_US&amp;sdk=joey&amp;show_facepile=false&amp;width=290"
+                style="
+                  border: none;
+                  visibility: visible;
+                  width: 210px;
+                  height: 130px;
+                "
+                class=""
+              >
+              </iframe>
+            </span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="text-center">
+              <hr />
+              <p>
+                Copyright © 2022 หลักสูตรวิทยาการคอมพิวเตอร์
+                คณะวิทยาศาสตร์และเทคโนโลยี <br />
+                มหาวิทยาลัยราชภัฏวไลยอลงกรณ์ ในพระบรมราชูปถัมภ์ เลขที่ 1 หมู่ 20
+                ต.คลองหนึ่ง อ.คลองหลวง จ.ปทุมธานี 13180
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
+
+<style>
+  .dropdown:hover > .dropdown-menu {
+    display: block !important;
+  }
+
+  .dropdown-submenu:hover > .dropdown-menu {
+    display: block !important;
+    left: 100%;
+    margin-top: -37px;
+  }
+
+  .dropdown-item {
+    font-size: small;
+    /* 13px */
+  }
+
+  .dropdown-toggle::after {
+    font-size: var(--font-md);
+    margin-bottom: -2px;
+  }
+
+  .dropdown-menu li a.active {
+    color: #fff;
+  }
+
+  .custom-toggle-arrow {
+    font-size: 18px;
+    margin-top: 1px;
+    line-height: 12px;
+  }
+</style>
+
